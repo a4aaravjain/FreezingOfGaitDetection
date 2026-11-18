@@ -1,4 +1,4 @@
-"""Paired scratch vs auxiliary motion pretraining; raw FoG-STAR validation only.
+﻿"""Paired scratch vs auxiliary motion pretraining; raw FoG-STAR validation only.
 The turning source is processed and is NEVER used to establish causal prediction accuracy.
 """
 from pathlib import Path

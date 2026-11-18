@@ -1,4 +1,4 @@
-"""Read-only FoG-STAR inventory; no training or automatic axis remapping."""
+﻿"""Read-only FoG-STAR inventory; no training or automatic axis remapping."""
 from pathlib import Path
 import pandas as pd
 

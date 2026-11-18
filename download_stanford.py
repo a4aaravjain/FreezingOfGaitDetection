@@ -1,4 +1,4 @@
-from pathlib import Path
+﻿from pathlib import Path
 import json,urllib.request,hashlib,concurrent.futures
 root=Path('external_downloads/stanford');root.mkdir(exist_ok=True)
 t=json.loads(Path('external_downloads/stanford_tree.json').read_text());revision=t['sha']

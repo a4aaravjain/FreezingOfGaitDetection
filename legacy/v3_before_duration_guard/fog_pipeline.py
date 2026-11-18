@@ -1,4 +1,4 @@
-"""Causal Daphnet data, targets, alarm replay, and evaluation (seconds, g).
+﻿"""Causal Daphnet data, targets, alarm replay, and evaluation (seconds, g).
 Labels are used for supervision/scoring only, never to suppress online alarms.
 """
 from dataclasses import dataclass, asdict

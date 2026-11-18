@@ -1,4 +1,4 @@
-"""Four-state LSTM: normal, useful precursor, too-late precursor, active FoG.
+﻿"""Four-state LSTM: normal, useful precursor, too-late precursor, active FoG.
 Labels are supervision only. The warning score comes only from sensor inputs.
 """
 from pathlib import Path

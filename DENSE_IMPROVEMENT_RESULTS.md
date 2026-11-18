@@ -1,16 +1,16 @@
-# Dense-model improvement experiments - 2026-10-16
+# Dense-model improvement experiments — 2026-10-16
 
 16 fits completed, covering balanced training, feature noise, four training durations, direct fine-tuning of the original saved model, and earlier positive training targets to allow for alarm delay. The original checkpoint was preserved.
 
-Scoring stays at 2-5 seconds before onset, with the existing false-alarm budget and one-second pulses. All models use right-ankle inputs and the original 24-feature dense-network architecture. Gaussian noise is training-only in that variant.
+Scoring stays at 2–5 seconds before onset, with the existing false-alarm budget and one-second pulses. All models use right-ankle inputs and the original 24-feature dense-network architecture. Gaussian noise is training-only in that variant.
 
-The first round trains on people 1-10, calibrates on 11-14, and assesses on 15-18. The remaining rounds intentionally use the original exploratory split: train 1-14, tune on 15-18. In these latter saved JSON files, calibration and assessment fields duplicate the SAME development evaluation; they are not independent results. The original saved model also used this development cohort. People 19-22 were not used.
+The first round trains on people 1–10, calibrates on 11–14, and assesses on 15–18. The remaining rounds intentionally use the original exploratory split: train 1–14, tune on 15–18. In these latter saved JSON files, calibration and assessment fields duplicate the SAME development evaluation; they are not independent results. The original saved model also used this development cohort. People 19–22 were not used.
 
 | Run | Variant | Early /16 | False starts | Mean lead (s) | Censored starts |
 |---|---|---:|---:|---:|---:|
-| dense_balanced_round_1 | pointwise | 0 | 0 | - | 0 |
+| dense_balanced_round_1 | pointwise | 0 | 0 | — | 0 |
 | dense_balanced_round_1 | person_episode_balanced | 1 | 0 | 4.22 | 0 |
-| dense_balanced_round_1 | balanced_feature_noise | 0 | 1 | - | 0 |
+| dense_balanced_round_1 | balanced_feature_noise | 0 | 1 | — | 0 |
 | dense_balanced_development_round_1 | pointwise | 2 | 0 | 3.62 | 1 |
 | dense_balanced_development_round_1 | person_episode_balanced | 1 | 0 | 4.47 | 0 |
 | dense_balanced_development_round_1 | balanced_feature_noise | 1 | 0 | 4.47 | 0 |

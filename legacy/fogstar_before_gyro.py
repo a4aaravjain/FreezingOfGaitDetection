@@ -1,4 +1,4 @@
-"""FoG-STAR native 60 Hz adapter. Explicit ankle, no interpolation/resampling."""
+﻿"""FoG-STAR native 60 Hz adapter. Explicit ankle, no interpolation/resampling."""
 from pathlib import Path
 import numpy as np
 import pandas as pd

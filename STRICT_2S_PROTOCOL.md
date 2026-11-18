@@ -1,4 +1,4 @@
-# Strict two-second prediction protocol (revision 4)
+﻿# Strict two-second prediction protocol (revision 4)
 
 Actual project folder: `C:\Users\victo\Desktop\Aarav\Science Fair 2026-2027`.
 

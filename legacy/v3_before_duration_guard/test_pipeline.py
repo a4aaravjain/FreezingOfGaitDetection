@@ -1,4 +1,4 @@
-"""Adversarial scientific checks; run with python test_pipeline.py."""
+﻿"""Adversarial scientific checks; run with python test_pipeline.py."""
 import tempfile
 import unittest
 from pathlib import Path

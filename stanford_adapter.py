@@ -1,4 +1,4 @@
-"""Native 128 Hz Stanford raw ankle adapter. No filtering/interpolation."""
+﻿"""Native 128 Hz Stanford raw ankle adapter. No filtering/interpolation."""
 from pathlib import Path
 import re
 import numpy as np,pandas as pd

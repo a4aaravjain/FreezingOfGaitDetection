@@ -1,4 +1,4 @@
-"""FoG research entry point. Default runs development only, never S09/S10.
+﻿"""FoG research entry point. Default runs development only, never S09/S10.
 See AUDIT.md and README.md. Historical code/models are preserved in legacy/.
 """
 import argparse

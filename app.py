@@ -1,4 +1,4 @@
-"""Read-only experiment report server, standard library only.
+﻿"""Read-only experiment report server, standard library only.
 Usage: python app.py --run runs/<run-directory>
 """
 import argparse

@@ -1,4 +1,4 @@
-"""Pooled native-rate ankle motion experiment; held-out people stay separate.
+﻿"""Pooled native-rate ankle motion experiment; held-out people stay separate.
 Only rotation-invariant features are combined; physical sample timing is retained.
 """
 from pathlib import Path

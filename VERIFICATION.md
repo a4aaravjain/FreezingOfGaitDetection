@@ -9,9 +9,9 @@ Tested with Python 3.11.9, TensorFlow 2.21.0, Keras 3.15.1, NumPy 2.4.6, pandas 
 - 23 adversarial unittest cases passed. These cover target endpoints, censoring, no-FoG recordings, past-only windows, fixed normalization, invalid labels/NaNs, timestamp and annotation gaps, subject separation, validation-only threshold selection, continuous alarms, duplicate warnings, nearby episodes, active-FoG replay, stream resets, final-test guards, and online/offline probability/EMA/alarm-state equality.
 - All 17 Daphnet files loaded and checked; 10 subjects, 237 observed onsets. Dataset inspection is not model evaluation of S09/S10.
 - All 20 external IMU files inspected; FoG-STAR fully read and checked; the clinical CSV read with its actual Windows-1252 encoding. None was used for training.
-- Real-data preprocessing/window generation produced 55,112 windows of shape (192,3) across S01-S08: 2,391 positive, 46,542 negative, 6,179 active/censored endpoints excluded from binary supervision. Sensor features were finite.
+- Real-data preprocessing/window generation produced 55,112 windows of shape (192,3) across S01–S08: 2,391 positive, 46,542 negative, 6,179 active/censored endpoints excluded from binary supervision. Sensor features were finite.
 - Initial one-epoch/512-window smoke training completed, with full validation replay. Its infeasible policy correctly disabled alarms. This preliminary smoke run preceded the final censoring refinements; use verification_v3 for the tested final source.
-- Final-code two-epoch training completed on all 40,675 eligible S01-S06 windows, with 9,454 S07/S08 validation replay windows (8,258 binary-eligible).
+- Final-code two-epoch training completed on all 40,675 eligible S01–S06 windows, with 9,454 S07/S08 validation replay windows (8,258 binary-eligible).
 - All four grouped-CV smoke folds completed in runs/cv_smoke_v3. Each fit used 512 training windows for one epoch, selected its policy only on inner validation, then exported frozen-policy outer-subject results. All four policies were disabled; these are plumbing tests, not scientific CV performance estimates.
 - Checkpointing, CSV training logs, full validation threshold sweep, model export/reload and report generation completed.
 - Reloaded-model predictions matched, and the real validation stream matched batched inference within rtol=1e-5, atol=1e-6. Synthetic full-stream tests also matched alarm starts/state.
@@ -45,7 +45,7 @@ Native Windows TensorFlow reported CPU-only execution and an ignored MapDataset 
 ## Still needed
 
 - Full-length (up to 18-epoch) development/grouped-CV training and review of every subject/fold, including disabled policies.
-- Prospective evaluation on genuinely unseen participants under a frozen protocol; none of S01-S10 qualifies.
+- Prospective evaluation on genuinely unseen participants under a frozen protocol; none of S01–S10 qualifies.
 - Hardware axis calibration, bias/range matching, dropped-sample behavior, on-device latency, memory/power and actuator timing. The software state reset must also cancel any physical actuator state in a future hardware adapter.
 - External-dataset placement/axis/label provenance and justified resampling, before any combined-data experiment.
 - UI HTTP serving was not exercised; its import and report rendering were checked.

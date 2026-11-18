@@ -1,4 +1,4 @@
-# Generalization experiments - 2026-10-16
+# Generalization experiments — 2026-10-16
 
 The model is not perfect. This round did not produce a model better across episode coverage, unsuccessful warnings and warning lead. No failed candidate replaced the existing research stream.
 

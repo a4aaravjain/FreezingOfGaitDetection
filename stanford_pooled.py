@@ -1,4 +1,4 @@
-"""Predeclared pooled raw-data experiment. Stanford 6/7 remain reserved."""
+﻿"""Predeclared pooled raw-data experiment. Stanford 6/7 remain reserved."""
 from pathlib import Path
 from dataclasses import replace,asdict
 import os,json,shutil

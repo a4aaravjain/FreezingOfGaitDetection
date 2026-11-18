@@ -1,4 +1,4 @@
-"""Temporal order-preserving architectures; inputs always stop at decision time."""
+﻿"""Temporal order-preserving architectures; inputs always stop at decision time."""
 def build_temporal_model(cfg,architecture):
     import tensorflow as tf
     tf.keras.utils.set_random_seed(cfg.seed)

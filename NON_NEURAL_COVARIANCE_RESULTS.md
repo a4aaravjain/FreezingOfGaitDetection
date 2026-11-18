@@ -1,8 +1,8 @@
-# Non-neural covariance experiments - 2026-10-16
+# Non-neural covariance experiments — 2026-10-16
 
 Eight fitted alternatives completed: logistic regression, RBF SVM, histogram gradient boosting and Extra Trees, each with two training representations. None improved the previous research candidate.
 
-Both rounds used right-ankle acceleration and angular velocity, trailing 3-second inputs at 60 Hz, and the unchanged 2-5-second early-warning target. Training people 1-10; calibration 11-14; assessment 15-18. Thresholds were frozen on calibration before assessment predictions; people 19-22 were not used. The assessment cohort has been examined in earlier work, so this is not a pristine final test.
+Both rounds used right-ankle acceleration and angular velocity, trailing 3-second inputs at 60 Hz, and the unchanged 2–5-second early-warning target. Training people 1–10; calibration 11–14; assessment 15–18. Thresholds were frozen on calibration before assessment predictions; people 19–22 were not used. The assessment cohort has been examined in earlier work, so this is not a pristine final test.
 
 Round 1 used 87 features including log-covariances at 0, 0.25 and 0.5-second delays. Round 2 appended 24 motion summaries and balanced training mass across people, classes within people, and positive episodes within each person. Because both representation and weighting changed together, their separate effects cannot be inferred.
 

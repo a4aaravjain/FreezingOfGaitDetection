@@ -1,4 +1,4 @@
-"""Bounded causal sample holding. Never use a future reading to fill a gap."""
+﻿"""Bounded causal sample holding. Never use a future reading to fill a gap."""
 import numpy as np
 
 class CausalHold:

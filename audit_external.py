@@ -1,4 +1,4 @@
-"""Audit FoG-STAR without training or pooling it with Daphnet."""
+﻿"""Audit FoG-STAR without training or pooling it with Daphnet."""
 from pathlib import Path
 import hashlib,json
 import numpy as np
