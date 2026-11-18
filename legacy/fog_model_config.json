@@ -1,0 +1,26 @@
+{
+  "model": "ankle XYZ Conv1D CNN v2 (BatchNorm + GAP)",
+  "raw_fog_label": 2,
+  "history_seconds": 3.0,
+  "horizon_seconds": 3.0,
+  "normalization": "causal_expanding_per_recording",
+  "exclude_in_fog_samples": true,
+  "negative_ratio": 3,
+  "positive_class_weight": 1.15,
+  "smoothing_window_steps": 5,
+  "persistence_window_steps": 3,
+  "persistence_required_steps": 2,
+  "cluster_gap_seconds": 1.0,
+  "used_imu_augmentation": false,
+  "used_sensor_data_augmentation": false,
+  "threshold_objective": "max_detection",
+  "max_false_alarms_per_minute": 1.0,
+  "minimum_validation_precision": 0.2,
+  "threshold_selected_on": "S08 validation only",
+  "threshold_value": 0.42408882379531865,
+  "test_subjects": [
+    "S09",
+    "S10"
+  ],
+  "seed": 42
+}

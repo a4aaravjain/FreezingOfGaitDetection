@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.vscode/
+.env
+.env.*
+*.log
+external_downloads/
+external_sources/
+imu/
+sensor_data.csv
+development_only_*.csv
+S??R??.txt

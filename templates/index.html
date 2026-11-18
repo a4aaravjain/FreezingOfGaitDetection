@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container mt-4">
+    <div class="table-responsive shadow-sm rounded">
+        <table class="table table-hover align-middle mb-0">
+
+            <thead class="table-dark">
+                <tr>
+                    <th>Avg</th>
+                    <th>Std</th>
+                    <th>Energy</th>
+                    <th>Dominant Hz</th>
+                    <th>Label</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for row in data %}
+                <tr>
+                    <td>{{ row.Avg }}</td>
+                    <td>{{ row.Std }}</td>
+                    <td>{{ row.Energy }}</td>
+                    <td>{{ row.Dominant_Hz }}</td>
+                    <td>{{ row.Label }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
